@@ -1,0 +1,19 @@
+[user]
+        email = moyed.ansari@cloudways.com
+        name = Moyed Ansari
+
+[alias]
+        cu = !git branch --merged | egrep -v \"(^\\*|master|develop)\" | xargs git branch -d    #Remove local branch which are merged with master
+        st = status                                                                             #Status of branch
+        ci = commit                                                                             #Commit Files
+        co = checkout                                                                           #Checkout branch
+        com = checkout master                                                                   #Checkout master branch
+        br = branch                                                                             #List Branch
+        unstage = reset HEAD --                                                                 #Unstage changes
+        last = log -1 HEAD                                                                      #Move to previous commit
+        la = "!git config -l | grep alias | cut -c 7-"                                          #List all Aliases
+        cob = checkout -b                                                                       #Create new branch
+        undo = reset --hard                                                                     #undoing change in current branch
+        df = diff                                                                               #difference in files
+
+
